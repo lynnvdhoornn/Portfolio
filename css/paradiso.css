@@ -173,14 +173,15 @@ section:nth-of-type(2) img:first-of-type {
 section:nth-of-type(2) video {
     width: 45em;
     border-radius: 0.5em;
-    left: 2em;
-    /* right: 2em; */
+    /* left: 1em; */
+    right: 2em;
+    position: relative;
 }
 
 @media (max-width: 40em) {
     section:nth-of-type(2) video {
-        width: 27em;
-        left:2em;
+        width: 29em;
+        left:1em;
         order: 1; 
     }
 }
@@ -237,7 +238,7 @@ section:nth-of-type(2) li:nth-of-type(2) div {
 }
 
 section:nth-of-type(2) li:nth-of-type(4) div {
-    padding: 0 5em 0 3em;
+    padding: 0 5em 0 1em;
 }
 
 section:nth-of-type(2) li:nth-of-type(2) {
@@ -293,19 +294,7 @@ video {
 
 
 /* Footer */
-footer {
-    display: block;
-    padding: 0 0 1em 0;
-}
 
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-footer span {
-    font-weight: bold;
-}
 
 
 header h1, 

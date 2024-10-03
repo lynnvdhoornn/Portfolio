@@ -73,7 +73,7 @@ section:first-of-type img {
 
 @media (max-width: 50em) {
     section:first-of-type img {
-        width: 29.5em;
+        width: 28.5em;
         border-radius: 0.7em;
     }
 }
@@ -100,7 +100,7 @@ section:first-of-type li:hover div {
     section:first-of-type div {
         position: static; 
         opacity: 1; 
-        padding: 1em 20em 1.5em 0.5em; 
+        padding: 1em 0em 1.5em 0.5em; 
         width: 100%; 
         display: block; 
         white-space: normal;
@@ -114,7 +114,7 @@ section:first-of-type li:hover div {
     section:first-of-type>ul:first-of-type {
         display: flex;
         flex-direction: column;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 }
 
@@ -166,7 +166,7 @@ section:first-of-type>ul:first-of-type li {
 border-color: #171717;
 border-radius: 1em;
 background-color: #171717;
-padding:0;
+padding: 0;
 display: flex;
         flex-direction: column-reverse;
     }
@@ -204,12 +204,12 @@ section:first-of-type>ul:first-of-type li a p {
     padding: 0 0 0em 0;
     border: none;
     margin: 0;
+    text-decoration: underline;
 }
 
 section:first-of-type>ul:first-of-type li a p:hover {
-    color: white;
+    color: rgb(203, 203, 203);
     background-color: #171717;
-    text-decoration: underline;
 }
 }
 
@@ -301,7 +301,7 @@ section:nth-of-type(2) p {
     }
 
 section:nth-of-type(3) h2 span {
-    font-family: var(--font-family2);
+    font-family: var(--font-family3);
 }
 
 section:nth-of-type(3) h2 span:first-child {

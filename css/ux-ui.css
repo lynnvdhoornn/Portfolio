@@ -14,6 +14,10 @@ header img {
     }
 }
 
+h2 {
+    padding-top: 1em;
+}
+
 section:nth-of-type(2) li:first-of-type div {
     padding: 5em 40em 6em 3em;
 }
@@ -49,7 +53,7 @@ section:nth-of-type(2) li:nth-of-type(2) div {
 
 @media (max-width: 40em) {
     section:nth-of-type(2) li:nth-of-type(2) div {
-        padding: 1em 2em 3em 1em;
+        padding: 1em 2em 3em 0;
     }
     section:nth-of-type(2) li:nth-of-type(2) h3 {
         padding-top: 0em;
@@ -99,7 +103,3 @@ position: relative;
     }
 }
 
-footer {
-    padding:0 0 0.5em 0;
-    margin:0;
-}
