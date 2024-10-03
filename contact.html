@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio - Lynn van der Hoorn</title>
+
+    <link href="./css/contact.css" rel="stylesheet">
+    <link href="./css/algemeen.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./images/bekijkportfolio.png">
+    <link href="./script.js" rel="script">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Lynn van der Hoorn</a></li>
+            </ul>
+            <ul>
+                <li><a href="projecten.html">Projecten</a></li>
+                <li><a href="overmij.html">Over mij</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <div class="cursor"></div>
+            </ul>
+            </ul>
+        </nav>
+
+        <h1>Contact</h1>
+    </header>
+
+    <main>
+        <form action="send_mail.php" method="POST">
+
+                <label for="fname">Voornaam</label>
+                <input type="text" id="fname" name="firstname" placeholder="Je naam..">
+
+                <label for="lname">Achternaam</label>
+                <input type="text" id="lname" name="lastname" placeholder="Je achternaam..">
+
+            <label for="subject">Bericht</label>
+            <textarea id="subject" name="subject" placeholder="Type iets.." style="height:200px"></textarea>
+
+            <input type="submit" value="Verstuur">
+        </form>
+    </main>
+
+    <footer>
+        <p>© 202<span>4</span> Lynn van der Hoorn</p>
+    </footer>
+</body>
+<script defer src="javascript.js"></script>
+
+</html>
