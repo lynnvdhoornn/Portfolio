@@ -237,10 +237,6 @@ section:nth-of-type(2) li:nth-of-type(2) div {
     padding: 0em 5em 0 2em;
 }
 
-section:nth-of-type(2) li:nth-of-type(4) div {
-    padding: 0 5em 0 1em;
-}
-
 section:nth-of-type(2) li:nth-of-type(2) {
     padding: 9em 3em 12em 0;
     display: flex;
@@ -270,6 +266,15 @@ section:nth-of-type(2) li:nth-of-type(3) img {
     }
 }
 
+section:nth-of-type(2) li:nth-of-type(4) div {
+    padding: 0 5em 0 2em;
+}
+
+@media (max-width: 40em) {
+    section:nth-of-type(2) li:nth-of-type(4) div {
+        padding-left: 1.5em;
+    }
+}
 
 section:nth-of-type(2) li:nth-of-type(4) {
     padding: 6em 0em 8em 0;
