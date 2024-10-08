@@ -9,8 +9,14 @@ header img {
 
 @media (max-width: 40em) {
     header img {
-       left: 4rem;
-       top: 6rem;
+        left: 4rem;
+        top: 6rem;
+    }
+}
+
+@media (max-width: 40em) {
+    section:nth-of-type(2) h3 {
+        padding-top: 0em;
     }
 }
 
@@ -22,20 +28,26 @@ section:nth-of-type(2) li:first-of-type img {
 
 @media (max-width: 40em) {
     section:nth-of-type(2) li:first-of-type img {
-padding: 0;
+        padding: 0;
     }
 }
 
 @media (max-width: 40em) {
-section:nth-of-type(2) img:first-of-type {
-    /* width: 31em; */
-    padding: 1em 1.5em;
-    /* order: 1; */
-}
+    section:nth-of-type(2) img:first-of-type {
+        /* width: 31em; */
+        /* padding: 1em 1.5em; */
+        /* order: 1; */
+    }
 }
 
 section:nth-of-type(2) li:nth-of-type(1) {
     padding: 4em 2em 3em 3em;
+}
+
+@media (max-width: 40em) {
+    section:nth-of-type(2) li:nth-of-type(1) {
+        padding: 2em 2em 0em 0em;
+    }
 }
 
 section:nth-of-type(2) li:first-of-type div:nth-of-type(2) {
@@ -52,27 +64,42 @@ section:nth-of-type(2) li:first-of-type div:nth-of-type(2) {
 }
 
 section:nth-of-type(2) li:first-of-type div {
-padding: 2em 12em 0 3em;
+    padding: 2em 12em 0 3em;
 }
 
 @media (max-width: 40em) {
     section:nth-of-type(2) li:first-of-type div {
-        padding: 0em 2em 0 1.5em;
-        }
+        padding: 0em 0em 0 1.5em;
+    }
 }
 
-section:nth-of-type(2) li:nth-of-type(2) img, section:nth-of-type(2) li:nth-of-type(4) img {
+section:nth-of-type(2) li:nth-of-type(2) img,
+section:nth-of-type(2) li:nth-of-type(4) img {
     border-radius: 0.5em;
 }
 
 @media (max-width: 40em) {
-    section:nth-of-type(2) li:nth-of-type(2) div {
-    padding: 0em 2em 0 1.5em;
+
+    section:nth-of-type(2) li:nth-of-type(2) img,
+    section:nth-of-type(2) li:nth-of-type(4) img {
+        padding: 0;
+    }
 }
+
+@media (max-width: 40em) {
+    section:nth-of-type(2) li:nth-of-type(2) div {
+        padding: 0em 2em 0 0em;
+    }
 }
 
 section:nth-of-type(2) li:nth-of-type(2) {
     padding: 9em 4em 14em 3em;
+}
+
+@media (max-width: 40em) {
+    section:nth-of-type(2) li:nth-of-type(2) {
+        padding: 2em 0em 0em 1.5em;
+    }
 }
 
 section:nth-of-type(2) li:nth-of-type(3) {
@@ -81,7 +108,7 @@ section:nth-of-type(2) li:nth-of-type(3) {
 }
 
 section:nth-of-type(2) li:nth-of-type(3) img {
-width: 100%;
+    width: 100%;
 }
 
 
@@ -95,16 +122,18 @@ section:nth-of-type(2) li:nth-of-type(4) div {
 }
 
 @media (max-width: 40em) {
-section:nth-of-type(2) li:nth-of-type(4) {
-    padding: 5em 1em 0 1.5em;
-}
-section:nth-of-type(2) li:nth-of-type(4) div {
-    padding: 1em 1.5em 2em 0em;
-}
+    section:nth-of-type(2) li:nth-of-type(4) {
+        padding: 5em 1em 0 1.5em;
+        flex-direction: column-reverse;
+    }
+
+    section:nth-of-type(2) li:nth-of-type(4) div {
+        padding: 1em 1.5em 2em 0em;
+    }
 }
 
 section:nth-of-type(2) li:nth-of-type(4) img {
-width: 32em;
+    width: 32em;
 }
 
 @media (max-width: 40em) {
@@ -121,26 +150,48 @@ section:nth-of-type(2) li:nth-of-type(5) {
     padding: 8em 3em;
 }
 
+@media (max-width: 40em) {
+    section:nth-of-type(2) li:nth-of-type(5) {
+        padding: 1em 0em;
+    }
+}
+
 section:nth-of-type(2) li:nth-of-type(5) img {
-    width: 30em;
-    height:28em;
-    }
+    width: 32em;
+    height: 28em;
+}
 
+@media (max-width: 40em) {
+    section:nth-of-type(2) li:nth-of-type(5) img:nth-of-type(1) {
+        width: 31em;
+        height: 31em;
+        padding: 4em 0em 0 1.5em;
+    }
+}
+
+section:nth-of-type(2) li:nth-of-type(5) img:nth-of-type(2) {
+    width: 22em;
+    height: 26em;
+}
+
+@media (max-width: 40em) {
     section:nth-of-type(2) li:nth-of-type(5) img:nth-of-type(2) {
-        width: 22em;
-        height:26em;
-        }
-
-        section:nth-of-type(2) li:nth-of-type(5) img:nth-of-type(3) {
-            width: 26em;
-            height:24em;
-            padding: 2em 0 0 4em;
-            }
-
-    @media (max-width: 40em) {
-        section:nth-of-type(2) li:nth-of-type(4) img:nth-of-type(2) {
-            width: 26em;
-            height:28em;
-            padding: 4em 2em 0 3em;
-        }
+        width: 28em;
+        height: 28em;
+        padding: 2em 2em 0 5em;
     }
+}
+
+section:nth-of-type(2) li:nth-of-type(5) img:nth-of-type(3) {
+    width: 26em;
+    height: 24em;
+    padding: 2em 0 0 4em;
+}
+
+@media (max-width: 40em) {
+    section:nth-of-type(2) li:nth-of-type(5) img:nth-of-type(3) {
+        width: 29em;
+        height: 27em;
+        padding: 4em 2em 0 4em;
+    }
+}
