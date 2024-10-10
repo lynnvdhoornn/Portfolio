@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // titles floating
 document.addEventListener("DOMContentLoaded", function() {
     // Selecteer h2's (met uitzondering van die in de 4e sectie), afbeeldingen, div's in de 2e en 4e sectie
-    const elements = document.querySelectorAll('header h1, header img, h2, header p, section ul:first-of-type, h3, p:not(footer)');
+    const elements = document.querySelectorAll('header h1, header img, h2, header p, section ul:first-of-type, h3, p:not(footer), form');
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {

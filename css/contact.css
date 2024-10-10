@@ -87,13 +87,13 @@ footer {
 }
 
 
-header h1 {
+header h1, h2, p, form {
     opacity: 0; 
     transform: translateY(50px); 
     transition: opacity 1s ease, transform 1s ease; 
 }
 
-header h1.in-view{
+header h1.in-view, h2.in-view, p.in-view, form.in-view{
     opacity: 1; 
     transform: translateY(0); 
 }
@@ -118,13 +118,11 @@ section:first-of-type {
   section:first-of-type {
     padding-left: 2.5em;
   }
-  section:first-of-type p:first-of-type {
-    margin:0;
-  }
 }
 
 h2 {
   font-size: 2em;
+  margin-bottom: 0;
 }
 
 @media (max-width: 40em) {
@@ -136,4 +134,8 @@ h2 {
 section:first-of-type ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+section:first-of-type p:first-of-type {
+  margin:0;
 }
