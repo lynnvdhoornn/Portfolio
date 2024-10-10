@@ -374,7 +374,7 @@ section:nth-of-type(3) li.in-view h3 {
 
 
 section:nth-of-type(4) {
-    padding: 8em 0em 1em 0em;
+    padding: 8em 2em 1em 2em;
 }
 
 @media (max-width: 40em) {
@@ -385,6 +385,7 @@ section:nth-of-type(4) {
 
 section:nth-of-type(4) div {
     background-color: #171717;
+    border-radius: 0.5em;
 }
 
 section:nth-of-type(4) h2 {
