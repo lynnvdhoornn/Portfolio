@@ -17,7 +17,7 @@ transition: transform 0.3s ease-out;
 h1 {
     z-index: 5;
     text-shadow: var(--text-shadow);
-    padding-right: 9em;
+    padding-right: 10em;
     position: relative;
     white-space: normal;
     padding-top: 13rem;
@@ -302,11 +302,15 @@ section:nth-of-type(2) p {
 
 section:nth-of-type(3) h2 span {
     font-family: var(--font-family3);
+    font-family: "barber-outline", sans-serif;
+    font-family: var(--font-family4);
+    font-family: "Londrina Outline", sans-serif;
 }
 
 section:nth-of-type(3) h2 span:first-child {
     transition: transform 0.1s ease-in-out;
-    font-family: var(--font-family3);
+    font-family: var(--font-family2);
+    font-family: "Londrina Outline", sans-serif;
 }
 
 section:nth-of-type(3) h2 span:last-child {

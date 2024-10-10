@@ -10,16 +10,18 @@
     font-family: 'copaloutline';
     src: url(../Demo_Fonts/Copal-Outline.otf) format('opentype');
     font-weight: bold;
-    /* src: local('rocgrotesk'); */
-    /* unicode-range: U+0022, U+0027; */
 }
 
 @font-face {
     font-family: 'copalsolid';
     src: url(../Demo_Fonts/Copal-Solid.ttf) format('opentype');
     font-weight: bold;
-    /* src: local('rocgrotesk'); */
-    /* unicode-range: U+0022, U+0027; */
+}
+
+@font-face {
+    font-family: 'ariah';
+    src: url(../Demo_Fonts/ARIAH.TTF) format('opentype');
+    font-weight: bold; 
 }
 
 
@@ -51,6 +53,7 @@
     --font-family: 'rocgrotesk';
     --font-family2: 'copaloutline';
     --font-family3: 'copalsolid';
+    --font-family4: 'ariah';
 
     --color-border: #ffff;
     --white-color-underline: #ffff;
