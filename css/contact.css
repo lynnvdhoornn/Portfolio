@@ -118,6 +118,9 @@ section:first-of-type {
   section:first-of-type {
     padding-left: 2.5em;
   }
+  section:first-of-type p:first-of-type {
+    margin:0;
+  }
 }
 
 h2 {
@@ -134,8 +137,4 @@ h2 {
 section:first-of-type ul {
   list-style-type: none;
   padding-left: 0;
-}
-
-section:first-of-type p:first-of-type {
-  margin:0;
 }
