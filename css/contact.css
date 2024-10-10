@@ -1,5 +1,5 @@
 header h1 {
-  padding-left: 0.8em;
+  padding-left: 0.3em;
   font-size: 8vw;
   margin-bottom: 0;
 }
@@ -7,7 +7,7 @@ header h1 {
 @media (max-width: 40em) {
   header h1 {
     padding: 2em 0 0 0.5em;
-    font-size: 8vw;
+    font-size: 14vw;
     margin: 0;
   }
 }
@@ -15,24 +15,31 @@ header h1 {
 
 form {
   border-radius: 1em;
-  padding: 0 22em;
+  padding-right: 4em;
 }
 
 @media (max-width: 40em) {
  form {
-  padding: 1em;
+  padding: 2em;
   }
 }
 
 input[type=text], select, textarea {
     width: 100%; 
-    padding: 12px;  
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    padding: 1.5em;  
+    background-color: #0e0e0e;
+    /* border-radius: 4px;  */
     box-sizing: border-box; 
     resize: vertical; 
     display: flex;
     flex-direction: column;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #C9EE8F; 
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
   }
 
   div {
@@ -41,6 +48,9 @@ input[type=text], select, textarea {
 
   input[type=text] {
     /* padding: 12px 20px; */
+    color: white;
+    /* border-color: #0e0e0e; */
+    border-bottom: 1px solid #C9EE8F; 
   }
   
   input[type=submit] {
@@ -48,22 +58,27 @@ input[type=text], select, textarea {
     color: black;
     padding: 12px 20px;
     border: none;
-    border-radius: 2px;
+    border-radius: 2em;
     cursor: pointer;
     margin-top: 1em;
   }
   
   textarea {
     padding-bottom: 2em;
+    border-bottom: 1px solid #C9EE8F; 
   }
 
   input[type=submit]:hover {
-    background-color: rgba(51,61,36,255);
+    background-color: #9fbb72;
   }
 
   label {
     display: block;
     padding: 1.2em 0 0.3em 0; 
+}
+
+label:first-of-type {
+padding-top: 0;
 }
 
 
@@ -81,4 +96,44 @@ header h1 {
 header h1.in-view{
     opacity: 1; 
     transform: translateY(0); 
+}
+
+main {
+  display: grid;
+  grid-template-columns: 45em auto;
+}
+
+@media (max-width: 40em) {
+main {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+section:first-of-type {
+  padding-left: 4.5em;
+}
+
+@media (max-width: 40em) {
+  section:first-of-type {
+    padding-left: 2.5em;
+  }
+  section:first-of-type p:first-of-type {
+    margin:0;
+  }
+}
+
+h2 {
+  font-size: 2em;
+}
+
+@media (max-width: 40em) {
+h2 {
+    margin-bottom: 0;
+  }
+}
+
+section:first-of-type ul {
+  list-style-type: none;
+  padding-left: 0;
 }

@@ -195,7 +195,8 @@ section:first-of-type>ul:first-of-type li a p {
 
 section:first-of-type>ul:first-of-type li a p:hover {
     color: black;
-    background-color: white;
+    background-color: #C9EE8F;
+    border-color: #C9EE8F;
     transition: color 0.3s ease-out, background-color 0.5s ease-out;
 }
 
@@ -400,7 +401,7 @@ section:nth-of-type(4) h2 {
     opacity: 1; 
     transform: translateY(0); 
     transition: none;
-    color: white;
+    color: #C9EE8F;
 }
 
 @media (max-width: 40em) {

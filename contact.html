@@ -32,19 +32,29 @@
     </header>
 
     <main>
+<section>
+    <h2>Get in touch<span>!</span></h2>
+    <ul>
+    <li><p>lynnvanderhoorn<span>@</span>gmail.com</p></li>
+    <li><p><span>+</span>31 6 3918697<span>4</span></p></li>
+</ul>
+</section>
+
+        <section>
         <form action="send_mail.php" method="POST">
 
-                <label for="fname">Voornaam</label>
-                <input type="text" id="fname" name="firstname" placeholder="Je naam..">
+                <label for="name">Naam ✽ </label>
+                <input type="text" id="fname" name="firstname">
 
-                <label for="lname">Achternaam</label>
-                <input type="text" id="lname" name="lastname" placeholder="Je achternaam..">
+                <label for="lname">E-mail ✽ </label>
+                <input type="text" id="lname" name="lastname">
 
-            <label for="subject">Bericht</label>
-            <textarea id="subject" name="subject" placeholder="Type iets.." style="height:200px"></textarea>
+            <label for="subject">Bericht ✽ </label>
+            <textarea id="subject" name="subject"></textarea>
 
             <input type="submit" value="Verstuur">
         </form>
+    </section>
     </main>
 
     <footer>
