@@ -1,5 +1,5 @@
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header h1 {
@@ -59,17 +59,20 @@ section {
 section ul {
     position: relative;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     list-style-type: none;
-    padding-left: 24em;
-    max-width: 59em;
+    padding: 0 2.5em 10em 4.5em;
+    gap: 2.5em;
+    /* max-width: 59em; */
     margin: 0;
+    overflow: scroll;
 }
 
 @media (max-width: 40em) {
     section ul {
         padding: 1em;
         max-width: 31em;
+        flex-direction: column;
     }
 }
 
@@ -142,18 +145,14 @@ footer {
 
 
 header h1, 
-header p,
-h3,
-p {
+header p {
     opacity: 0; 
     transform: translateY(50px); 
     transition: opacity 1s ease, transform 1s ease; 
 }
 
 header h1.in-view, 
-header p.in-view,
-h3.in-view,
-p.in-view {
+header p.in-view {
     opacity: 1; 
     transform: translateY(0); 
 }
