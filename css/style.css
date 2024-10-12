@@ -135,6 +135,7 @@ section:first-of-type h3 {
 section:first-of-type>ul:first-of-type p {
     display: flex;
     flex-wrap: nowrap;
+    padding-right: 2em;
 }
 
 
@@ -170,6 +171,7 @@ padding: 0;
 display: flex;
         flex-direction: column-reverse;
     }
+
     section:first-of-type>ul:first-of-type li:last-of-type {
 display: none;
     }
@@ -284,41 +286,54 @@ section:nth-of-type(2) p {
 /*** 3e section ***/
 /******************/
 
-    section:nth-of-type(3) h2 {
-        font-size: 10vw;
-        display: flex;
-        justify-content: center;
-        opacity: 1; 
-        transition: none;
-    position: relative;
+    section:nth-of-type(3) {
+        font-size: 8vw;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* opacity: 1;  */
+        /* transition: none; */
+    /* position: relative; */
     overflow: hidden;
-    margin: 0;
+    /* gap: 2em; */
+    /* margin: 0; */
+    /* flex-wrap: nowrap; */
     }
 
-@media (max-width: 40em) {
-        section:nth-of-type(3) h2 {
-            font-size: 16vw;
-        }
+    section:nth-of-type(3) h2 {
+margin: 0;
     }
 
-section:nth-of-type(3) h2 span {
+section:nth-of-type(3) span {
+    font-size: 8vw;
     font-family: var(--font-family3);
     font-family: "barber-outline", sans-serif;
     font-family: var(--font-family4);
     font-family: "Londrina Outline", sans-serif;
+    white-space: nowrap;
+    display: block;
+    transition: transform 0.2s ease-out;
+    word-spacing: 0.1em;
 }
 
-section:nth-of-type(3) h2 span:first-child {
-    transition: transform 0.1s ease-in-out;
-    font-family: var(--font-family2);
-    font-family: "Londrina Outline", sans-serif;
+@media (max-width: 40em) {
+    section:nth-of-type(3) span {
+        font-size: 16vw;
+    }
 }
 
-section:nth-of-type(3) h2 span:last-child {
-    transition: transform 0.1s ease-in-out;
+section:nth-of-type(3) span:last-of-type div {
+    font-family: "Londrina Solid", sans-serif;
+    letter-spacing: 0.01em;
+    padding: 0 0.3em;
+    color:#C9EE8F;
 }
 
-section:nth-of-type(3) ul {
+section:nth-of-type(3) span:last-child {
+    display: flex;
+}
+
+section:nth-of-type(4) ul {
     list-style: none;
     display: grid;
     justify-content: center;
@@ -327,12 +342,12 @@ section:nth-of-type(3) ul {
 }
 
 @media (max-width: 40em) {
-    section:nth-of-type(3) ul {
+    section:nth-of-type(4) ul {
         grid-template-columns: repeat(3, 8em);
     }
 }
 
-section:nth-of-type(3) ul li {
+section:nth-of-type(4) ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,7 +355,7 @@ section:nth-of-type(3) ul li {
     padding-top: 2em;
 }
 
-section:nth-of-type(3) img {
+section:nth-of-type(4) img {
     border-radius: 30em;
     border-width: 0;
     width: 6em;
@@ -348,25 +363,25 @@ section:nth-of-type(3) img {
 }
 
 @media (max-width: 40em) {
-    section:nth-of-type(3) img {
+    section:nth-of-type(4) img {
         width: 4em;
     }
 }
 
 @media (max-width: 40em) {
-    section:nth-of-type(3) h3 {
+    section:nth-of-type(4) h3 {
         font-size: small;
     }
 }
 
-section:nth-of-type(3) img, section:nth-of-type(3) h3 {
+section:nth-of-type(4) img, section:nth-of-type(4) h3 {
     transition: transform 1s ease-out, opacity 1s ease-out; 
     transform: translateY(100px); 
     opacity: 0; 
 }
 
-section:nth-of-type(3) li.in-view img,
-section:nth-of-type(3) li.in-view h3 {
+section:nth-of-type(4) li.in-view img,
+section:nth-of-type(4) li.in-view h3 {
     transform: translateY(0);
     opacity: 1;
 }
@@ -378,22 +393,24 @@ section:nth-of-type(3) li.in-view h3 {
 /******************/
 
 
-section:nth-of-type(4) {
+section:nth-of-type(5) {
     padding: 8em 2em 1em 2em;
 }
 
 @media (max-width: 40em) {
-    section:nth-of-type(4) {
+    section:nth-of-type(5) {
         padding-top: 3em;
     }
 }
 
-section:nth-of-type(4) div {
+section:nth-of-type(5) div {
     background-color: #171717;
     border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: 72em auto;
 }
 
-section:nth-of-type(4) h2 {
+section:nth-of-type(5) h2 {
     padding: 0.8em 0 1em 0.5em;
     font-size: 8vw;
     display: flex;
@@ -401,17 +418,17 @@ section:nth-of-type(4) h2 {
     opacity: 1; 
     transform: translateY(0); 
     transition: none;
-    color: #C9EE8F;
+    /* color: #C9EE8F; */
 }
 
 @media (max-width: 40em) {
-    section:nth-of-type(4) h2 {
+    section:nth-of-type(5) h2 {
         font-size: 14vw;
         padding-bottom: 0.5em;
     }
 }
 
-section:nth-of-type(4) ul {
+section:nth-of-type(5) ul {
     list-style: none;
     display: flex;
     gap: 8em;
@@ -419,27 +436,34 @@ section:nth-of-type(4) ul {
 }
 
 @media (max-width: 40em) {
-    section:nth-of-type(4) ul {
+    section:nth-of-type(5) ul {
         padding: 0 0 3em 2em;
     }
 }
 
-section:nth-of-type(4) ul li {
+section:nth-of-type(5) ul li {
     display: flex;
     flex-direction: column;
     line-height: 0.2em;
 }
 
+section:nth-of-type(5) img {
+    width: 8em;
+    top: 6rem;
+    position: relative;
+    transition: transform 0.3s ease-out;
+}
 
 @media (max-width: 40em) {
-    section:nth-of-type(4) p {
-        font-size: small;
+    section:nth-of-type(5) img {
+        width: 4em;
     }
 }
 
-
-section:nth-of-type(4) p {
-    color: white;
+@media (max-width: 40em) {
+    section:nth-of-type(5) ul p {
+        font-size: small;
+    }
 }
 
 
@@ -458,14 +482,14 @@ section:nth-of-type(2) img.in-view {
     transform: translateY(0);
 }
 
-section:nth-of-type(4) div 
+section:nth-of-type(5) div 
  {
     opacity: 0; 
     transform: translateY(50px); 
     transition: opacity 1s ease, transform 1s ease;
 }
 
-section:nth-of-type(4) div.in-view {
+section:nth-of-type(5) div.in-view {
     opacity: 1; 
     transform: translateY(0); 
 }
