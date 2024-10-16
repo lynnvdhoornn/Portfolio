@@ -100,7 +100,7 @@ section:first-of-type li:hover div {
     section:first-of-type div {
         position: static; 
         opacity: 1; 
-        padding: 1em 0em 1.5em 0.5em; 
+        padding: 1em 0em 1.5em 1em; 
         width: 100%; 
         display: block; 
         white-space: normal;
@@ -182,6 +182,13 @@ section:first-of-type>ul:first-of-type li div a {
     padding-right: 24em;
 }
 
+@media (max-width: 50em) {
+section:first-of-type>ul:first-of-type li div a {
+    display: inline-block;
+    padding-right: 0em;
+}
+}
+
 section:first-of-type>ul:first-of-type li:last-of-type a {
     text-decoration: none;
     padding-right: 21em;
@@ -204,15 +211,15 @@ section:first-of-type>ul:first-of-type li a p:hover {
 
 @media (max-width: 50em) { 
 section:first-of-type>ul:first-of-type li a p {
-    padding: 0 0 0em 0;
+    background-color: #C9EE8F;
+    color: black;
+    padding: 0.8em 1em;
     border: none;
-    margin: 0;
-    text-decoration: underline;
+    border-radius: 2em;
 }
 
 section:first-of-type>ul:first-of-type li a p:hover {
-    color: rgb(203, 203, 203);
-    background-color: #171717;
+    background-color: #9fbb72;
 }
 }
 
@@ -243,7 +250,7 @@ section:nth-of-type(2) h2 {
 
 section:nth-of-type(2) div {
     justify-content: space-evenly;
-    padding: 4em 15em 12em 0;
+    padding: 4em 18em 12em 0;
     display: flex;
     align-items: flex-start;
     position: relative;
@@ -253,7 +260,7 @@ section:nth-of-type(2) div {
 @media (max-width: 40em) {
     section:nth-of-type(2) div {
     flex-direction: column-reverse;
-    padding: 3em 0 2em 1em;
+    padding: 3em 0 2em 1.5em;
     }
 }
 
@@ -275,7 +282,7 @@ section:nth-of-type(2) p {
 
 @media (max-width: 40em) {
     section:nth-of-type(2) p {
-        padding: 1em 1em 1em 0;
+        padding: 1em 2.5em 1em 0;
         font-size: medium;
     }
 }
@@ -318,7 +325,7 @@ section:nth-of-type(3) span {
 
 @media (max-width: 40em) {
     section:nth-of-type(3) span {
-        font-size: 16vw;
+        font-size: 12vw;
     }
 }
 
@@ -332,6 +339,13 @@ section:nth-of-type(3) span:last-of-type div {
 section:nth-of-type(3) span:last-child {
     display: flex;
 }
+
+
+/******************/
+/*** 4e section ***/
+/******************/
+
+
 
 section:nth-of-type(4) ul {
     list-style: none;
@@ -399,7 +413,7 @@ section:nth-of-type(5) {
 
 @media (max-width: 40em) {
     section:nth-of-type(5) {
-        padding-top: 3em;
+        padding: 3em 1.5em 1em 1.5em;
     }
 }
 
@@ -408,6 +422,12 @@ section:nth-of-type(5) div {
     border-radius: 0.5em;
     display: grid;
     grid-template-columns: 72em auto;
+}
+
+@media (max-width: 40em) {
+    section:nth-of-type(5) div {
+        grid-template-columns: 22em auto;
+    }
 }
 
 section:nth-of-type(5) h2 {
@@ -438,6 +458,7 @@ section:nth-of-type(5) ul {
 @media (max-width: 40em) {
     section:nth-of-type(5) ul {
         padding: 0 0 3em 2em;
+        gap: 1.5em;
     }
 }
 
@@ -457,12 +478,15 @@ section:nth-of-type(5) img {
 @media (max-width: 40em) {
     section:nth-of-type(5) img {
         width: 4em;
+        top: 4.5rem;
     }
 }
 
 @media (max-width: 40em) {
     section:nth-of-type(5) ul p {
         font-size: small;
+        display: flex;
+        flex-wrap: nowrap;
     }
 }
 
