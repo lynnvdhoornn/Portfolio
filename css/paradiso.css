@@ -216,6 +216,7 @@ section:nth-of-type(2) li:nth-of-type(1) video {
     left:3em;
     width: 40em;
     border-radius: 1em;
+    bottom: 4em;
 }
 
 @media (max-width: 40em) {
