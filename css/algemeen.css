@@ -1,7 +1,23 @@
 @font-face {
-    font-family: 'rocgrotesk';
+    font-family: 'rocgroteskbold';
+    src: url(../Demo_Fonts/rocgrotesk-bold.otf) format('woff2');
+    font-weight: bold;
+    /* src: local('rocgrotesk'); */
+    /* unicode-range: U+0022, U+0027; */
+}
+
+@font-face {
+    font-family: 'rocgroteskregular';
     src: url(../Demo_Fonts/rocgrotesk-regular.otf) format('woff2');
     font-weight: bold;
+    /* src: local('rocgrotesk'); */
+    /* unicode-range: U+0022, U+0027; */
+}
+
+@font-face {
+    font-family: 'rocgrotesklight';
+    src: url(../Demo_Fonts/rocgrotesk-light.otf) format('woff2');
+    font-weight: light;
     /* src: local('rocgrotesk'); */
     /* unicode-range: U+0022, U+0027; */
 }
@@ -34,26 +50,25 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: var(--font-family-regular);
     font-weight: bold;
 }
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
     --color-text: #ffff;
     --black-color-text: #000000;
-    --color-background: #0e0e0e;
+    --color-background: rgb(18, 18, 18);
     --dark-color-background: rgba(117, 19, 124, 215);
     --light-color-background: rgba(157, 29, 164, 255);
     --lighter-color-background: rgba(230, 170, 230, 255);
     --black-color-background: #000000;
-    --font-family: 'rocgrotesk';
+    --font-family-bold: 'rocgroteskbold';
+    --font-family-regular: 'rocgroteskregular';
+    --font-family-light: 'rocgrotesklight';
     --font-family2: 'copaloutline';
     --font-family3: 'copalsolid';
-    --font-family4: 'ariah';
 
     --color-border: #ffff;
     --white-color-underline: #ffff;
@@ -71,16 +86,20 @@
 /* JOUW STYLING */
 /****************/
 
+h1, h2, h3 {
+    font-family: var(--font-family-regular);
+}
+
 body {
     background-color: var(--color-background);
     color: var(--color-text);
     margin: 0;
-    padding: 0;
 }
 
 p {
     /* letter-spacing: 0.1em; */
     word-spacing: 0.05em;
+    font-family: var(--font-family-light);
 }
 
 .cursor {
@@ -133,7 +152,7 @@ header {
     gap: 1em;
     white-space: nowrap;
     margin: 0;
-    padding: 0.5em 0.5em 0 2em;
+    padding: 0.5em 0em 0 0em;
 }
 
 @media (max-width: 40em) {
@@ -176,7 +195,7 @@ header nav:last-of-type ul li a {
 header nav:last-of-type ul {
     gap: 2em;
     list-style-type: none;
-    padding: 1.5em 4em 0 2em;
+    padding: 0.5em 2em 0 2em;
 }
 
 @media (max-width: 40em) {

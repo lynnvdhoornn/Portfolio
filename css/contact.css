@@ -1,6 +1,20 @@
+* {
+  /* background-color: #e3e4dd; */
+  /* background-color: rgb(18, 18, 18);; */
+  /* color: blue; */
+}
+
+header nav:last-of-type ul li a {
+/* color: blue; */
+}
+
+header nav:last-of-type ul li a {
+  /* color: blue; */
+}
+
 header h1 {
-  padding-left: 0.3em;
-  font-size: 8vw;
+  padding-left: 2.25em;
+  font-size: 6vw;
   margin-bottom: 0;
 }
 
@@ -27,7 +41,7 @@ form {
 input[type=text], select, textarea {
     width: 100%; 
     padding: 1.5em;  
-    background-color: #0e0e0e;
+    background-color: #e3e4dd;
     /* border-radius: 4px;  */
     box-sizing: border-box; 
     resize: vertical; 
@@ -35,7 +49,7 @@ input[type=text], select, textarea {
     flex-direction: column;
     color: white;
     border: none;
-    border-bottom: 1px solid #C9EE8F; 
+    border-bottom: 1px solid blue; 
   }
 
   input:focus, textarea:focus {
@@ -50,12 +64,12 @@ input[type=text], select, textarea {
     /* padding: 12px 20px; */
     color: white;
     /* border-color: #0e0e0e; */
-    border-bottom: 1px solid #C9EE8F; 
+    border-bottom: 1px solid blue; 
   }
   
   input[type=submit] {
-    background-color: #C9EE8F;
-    color: black;
+    background-color: blue;
+    color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 2em;
@@ -65,7 +79,7 @@ input[type=text], select, textarea {
   
   textarea {
     padding-bottom: 2em;
-    border-bottom: 1px solid #C9EE8F; 
+    border-bottom: 1px solid blue 
   }
 
   input[type=submit]:hover {
@@ -100,7 +114,8 @@ header h1.in-view, h2.in-view, p.in-view, form.in-view{
 
 main {
   display: grid;
-  grid-template-columns: 45em auto;
+  grid-template-columns: 35em auto;
+  padding: 0 8em;
 }
 
 @media (max-width: 40em) {
@@ -137,4 +152,9 @@ h2 {
 section:first-of-type ul {
   list-style-type: none;
   padding-left: 0;
+  /* margin: 0; */
+}
+
+section:first-of-type ul li p:nth-of-type(1) {
+margin: 0;
 }

@@ -1,7 +1,7 @@
 header img:first-of-type {
-    width: 10em;
+    width: 9em;
     position: relative;
-left: 75rem;
+left: 78rem;
 transition: transform 0.3s ease-out;
 }
 
@@ -20,10 +20,11 @@ h1 {
     padding-right: 10em;
     position: relative;
     white-space: normal;
-    padding-top: 13rem;
-        padding-left: 2.5rem;
+    padding-top: 15rem;
+        padding-left: 5rem;
         font-size: 4vw;
         margin: 0;
+        /* font-family: "minion-pro", serif; */
 }
 
 @media (max-width: 40em) {
@@ -35,9 +36,11 @@ h1 {
     }
 }
 
-/******************/
-/*** 1e section ***/
-/******************/
+
+
+/*****************************/
+/*** 1e section: projecten ***/
+/*****************************/
 
 section h2 {
     opacity: 0;
@@ -146,7 +149,7 @@ section:first-of-type>ul:first-of-type {
     grid-gap: 0;
     margin: 0;
     list-style-type: none;
-    gap: 0;
+    gap: 0.25em;
 }
 
 @media (max-width: 50em) {
@@ -226,9 +229,9 @@ section:first-of-type>ul:first-of-type li a p:hover {
 
 
 
-/******************/
-/*** 2e section ***/
-/******************/
+/****************************/
+/*** 2e section: over mij ***/
+/****************************/
 
 
 section:nth-of-type(2) h2 {
@@ -265,7 +268,7 @@ section:nth-of-type(2) div {
 }
 
 section:nth-of-type(2) img {
-    border-radius: 0.5em;
+    /* border-radius: 0.5em; */
     width: 20em;
 }
 
@@ -276,7 +279,7 @@ section:nth-of-type(2) img {
 }
 
 section:nth-of-type(2) p {
-    padding: 1em 8em 2em 14em;
+    padding: 0em 8em 2em 16em;
     font-size: large;
 }
 
@@ -289,9 +292,9 @@ section:nth-of-type(2) p {
 
 
 
-/******************/
-/*** 3e section ***/
-/******************/
+/*****************************/
+/*** 3e section: span text ***/
+/*****************************/
 
     section:nth-of-type(3) {
         font-size: 8vw;
@@ -341,9 +344,9 @@ section:nth-of-type(3) span:last-child {
 }
 
 
-/******************/
-/*** 4e section ***/
-/******************/
+/**************************/
+/*** 4e section: skills ***/
+/**************************/
 
 
 
@@ -351,7 +354,7 @@ section:nth-of-type(4) ul {
     list-style: none;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 12em);
+    grid-template-columns: repeat(4, 11em);
     padding: 3em 0 4em 0;
 }
 
@@ -371,8 +374,7 @@ section:nth-of-type(4) ul li {
 
 section:nth-of-type(4) img {
     border-radius: 30em;
-    border-width: 0;
-    width: 6em;
+    width: 5em;
     box-shadow: 0.1em 0.1em 0.2em #3a3a3a;
 }
 
@@ -402,9 +404,9 @@ section:nth-of-type(4) li.in-view h3 {
 
 
 
-/******************/
-/*** 4e section ***/
-/******************/
+/***************************/
+/*** 5e section: contact ***/
+/***************************/
 
 
 section:nth-of-type(5) {
@@ -431,7 +433,7 @@ section:nth-of-type(5) div {
 }
 
 section:nth-of-type(5) h2 {
-    padding: 0.8em 0 1em 0.5em;
+    padding: 0.5em 0 1em 0.5em;
     font-size: 8vw;
     display: flex;
     margin: 0;
@@ -480,6 +482,10 @@ section:nth-of-type(5) img {
         width: 4em;
         top: 4.5rem;
     }
+}
+
+section:nth-of-type(5) ul p:nth-of-type(1) {
+margin: 0;
 }
 
 @media (max-width: 40em) {

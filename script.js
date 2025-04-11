@@ -105,4 +105,3 @@ window.addEventListener('scroll', () => {
     scrollRight.style.transform = `translateX(${rightTranslate}px)`;
     scrollLeft.style.transform = `translateX(${leftTranslate}px)`;
 });
-

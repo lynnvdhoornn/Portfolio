@@ -1,0 +1,68 @@
+header h1 {
+    left: 5rem;
+    top: 41rem;
+}
+
+header img:nth-of-type(1) {
+    width: 36em;
+    left: 28rem;
+    top: 10rem;
+}
+
+header img:nth-of-type(2) {
+    left: 43rem;
+    top: 9rem;
+}
+
+section:nth-of-type(1) img {
+    width: 70em;
+}
+
+main section:nth-of-type(2) {
+    gap: 0;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+main section:nth-of-type(1) {
+    padding-bottom: 10em;
+}
+
+main section:nth-of-type(2) img:nth-of-type(1) {
+    height: 43em;
+    width: 43em;
+}
+
+main section:nth-of-type(2) img:nth-of-type(2) {
+    height: 43em;
+    width: 43em;
+}
+
+main section:nth-of-type(3) {
+    flex-direction: column;
+    padding: 8em 0 2em 10em;
+}
+
+main section:nth-of-type(4) img:nth-of-type(1) {
+    height: 43em;
+    width: 43em;
+}
+
+main section:nth-of-type(4) img:nth-of-type(2) {
+    height: 43em;
+    width: 43em;
+}
+
+main section:nth-of-type(3) img:nth-of-type(1) {
+    width: 70em;
+    height: 40em;
+}
+
+main section:nth-of-type(4) {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    justify-content: center;
+    gap: 1em;
+    display: flex;
+}
