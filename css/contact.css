@@ -41,7 +41,7 @@ form {
 input[type=text], select, textarea {
     width: 100%; 
     padding: 1.5em;  
-    background-color: #e3e4dd;
+    background-color: rgb(21, 21, 21);
     /* border-radius: 4px;  */
     box-sizing: border-box; 
     resize: vertical; 
@@ -49,7 +49,7 @@ input[type=text], select, textarea {
     flex-direction: column;
     color: white;
     border: none;
-    border-bottom: 1px solid blue; 
+    /* border-bottom: 1px solid blue;  */
   }
 
   input:focus, textarea:focus {
@@ -62,9 +62,9 @@ input[type=text], select, textarea {
 
   input[type=text] {
     /* padding: 12px 20px; */
-    color: white;
+    color: rgba(25,25,141,255);
     /* border-color: #0e0e0e; */
-    border-bottom: 1px solid blue; 
+    border-bottom: 1px solid white; 
   }
   
   input[type=submit] {
@@ -79,11 +79,11 @@ input[type=text], select, textarea {
   
   textarea {
     padding-bottom: 2em;
-    border-bottom: 1px solid blue 
+    border-bottom: 1px solid white; 
   }
 
   input[type=submit]:hover {
-    background-color: #9fbb72;
+    background-color: rgba(43,43,152,255);
   }
 
   label {

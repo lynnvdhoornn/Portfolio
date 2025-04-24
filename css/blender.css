@@ -58,7 +58,7 @@ main section:nth-of-type(1) div {
 
 main section:nth-of-type(1) {
     /* display: flex; */
-    padding: 8em 0em 3em 10em;
+    padding: 6em 0em 0em 10em;
     gap: 2em;
 }
 
@@ -111,7 +111,7 @@ main section:nth-of-type(4) img {
 }
 
 main section:nth-of-type(2) {
-    padding: 5em 4em 4em 10em;
+    padding: 5em 4em 2em 10em;
     /* display: flex; */
 }
 
@@ -129,6 +129,7 @@ main section:nth-of-type(4) {
 main section:nth-of-type(4) img:nth-of-type(1) {
     width: 98%;
     height: 100%;
+    padding-left: 1.5em;
 }
 
 main section:nth-of-type(3) {
@@ -140,10 +141,6 @@ main section:nth-of-type(3) {
 
 main section:nth-of-type(3) div {
     /* padding: 0 16em 0 3em; */
-}
-
-main section:nth-of-type(3) img:nth-of-type(1) {
-    width: 33em;
 }
 
 @media (max-width: 40em) {

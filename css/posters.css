@@ -36,18 +36,18 @@ main section:nth-of-type(3) {
     flex-direction: row;
     gap: 1em;
     justify-content: left;
+    padding-bottom: 6em;
 }
 
 main section:nth-of-type(3) img:nth-of-type(1) {
     width: 18em;
     height: 26em;
-    margin-top: 1em;
 }
 
 main section:nth-of-type(3) article:nth-of-type(2) img {
     width: 22em;
     height: 15em;
-    margin-top: 3.5em;
+    margin-top: 2.8em;
 }
 
 header img:nth-of-type(2) {
@@ -59,4 +59,15 @@ header img:nth-of-type(2) {
     transition: none;
     position: relative;
     transition: transform 0.3s ease-out;
+}
+
+main section:nth-of-type(4) {
+    flex-direction: column;
+    gap: 0;
+    padding-left: 45em;
+}
+
+main section:nth-of-type(4) img {
+    width: 28em;
+    height: 30em;
 }

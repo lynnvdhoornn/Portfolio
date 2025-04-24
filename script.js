@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // titles floating
 document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('section h2:not(section:nth-of-type(3) h2), section img, section:nth-of-type(2) div, section:nth-of-type(5) div');
+    const elements = document.querySelectorAll('section h2:not(section:nth-of-type(3) h2), section img, section:nth-of-type(2) div, section:nth-of-type(5) div, section ol');
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {

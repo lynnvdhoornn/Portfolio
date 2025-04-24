@@ -206,23 +206,23 @@ section:first-of-type>ul:first-of-type li a p {
 }
 
 section:first-of-type>ul:first-of-type li a p:hover {
-    color: black;
-    background-color: #C9EE8F;
-    border-color: #C9EE8F;
+    color: white;
+    background-color: rgba(25,25,141,255);
+    border-color: rgba(25,25,141,255);
     transition: color 0.3s ease-out, background-color 0.5s ease-out;
 }
 
 @media (max-width: 50em) { 
 section:first-of-type>ul:first-of-type li a p {
-    background-color: #C9EE8F;
-    color: black;
+    background-color: rgba(25,25,141,255);
+    color: white;
     padding: 0.8em 1em;
     border: none;
     border-radius: 2em;
 }
 
 section:first-of-type>ul:first-of-type li a p:hover {
-    background-color: #9fbb72;
+    background-color: rgba(25,25,141,255);
 }
 }
 
@@ -336,7 +336,7 @@ section:nth-of-type(3) span:last-of-type div {
     font-family: "Londrina Solid", sans-serif;
     letter-spacing: 0.02em;
     padding: 0 0.3em;
-    color:#C9EE8F;
+    color: rgb(26, 26, 255);
 }
 
 section:nth-of-type(3) span:last-child {
@@ -499,7 +499,7 @@ margin: 0;
 
 section:nth-of-type(2) h2, 
 section:nth-of-type(2) div, 
-section:nth-of-type(2) img {
+section:nth-of-type(2) img, section:nth-of-type(5) div  {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
@@ -507,19 +507,7 @@ section:nth-of-type(2) img {
 
 section:nth-of-type(2) h2.in-view, 
 section:nth-of-type(2) div.in-view, 
-section:nth-of-type(2) img.in-view {
+section:nth-of-type(2) img.in-view, section:nth-of-type(5) div.in-view {
     opacity: 1;
     transform: translateY(0);
-}
-
-section:nth-of-type(5) div 
- {
-    opacity: 0; 
-    transform: translateY(50px); 
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-section:nth-of-type(5) div.in-view {
-    opacity: 1; 
-    transform: translateY(0); 
 }
