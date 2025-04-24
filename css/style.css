@@ -103,7 +103,7 @@ section:first-of-type li:hover div {
     section:first-of-type div {
         position: static; 
         opacity: 1; 
-        padding: 1em 0em 1.5em 1em; 
+        padding: 1em 0em 0.5em 1em; 
         width: 100%; 
         display: block; 
         white-space: normal;
@@ -207,8 +207,8 @@ section:first-of-type>ul:first-of-type li a p {
 
 section:first-of-type>ul:first-of-type li a p:hover {
     color: white;
-    background-color: rgba(25,25,141,255);
-    border-color: rgba(25,25,141,255);
+    background-color: blue;
+    border-color: blue;
     transition: color 0.3s ease-out, background-color 0.5s ease-out;
 }
 
@@ -480,7 +480,7 @@ section:nth-of-type(5) img {
 @media (max-width: 40em) {
     section:nth-of-type(5) img {
         width: 4em;
-        top: 4.5rem;
+        top: 3rem;
     }
 }
 
