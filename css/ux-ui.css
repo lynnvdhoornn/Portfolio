@@ -160,8 +160,8 @@ main section:nth-of-type(3) img:nth-of-type(1) {
 }
 
 main section:nth-of-type(4) {
-    padding: 8em 0em 8em 10em;
-    flex-direction: column  ;
+    padding: 8em 0em 4em 10em;
+    flex-direction: column;
     /* background-color: #171717; */
 }
 
@@ -173,8 +173,8 @@ main section:nth-of-type(4) {
 }
 
 main section:nth-of-type(4) img {
-width: 17em;
-height: 34em;
+width: 12em;
+height: 24em;
 }
 
 @media (max-width: 40em) {
@@ -186,14 +186,14 @@ height: 34em;
 
     main section:nth-of-type(4) video {
         right: 0em;
-        width: 15em;
+        width: 10.5em;
     }
 
     main section:nth-of-type(4) div:last-of-type {
 display: flex;
 flex-direction: row;
 gap:3em;
-padding-left: 9em;
+/* padding-left: 9em; */
 /* padding-right: 10em; */
 position: relative;
 }
