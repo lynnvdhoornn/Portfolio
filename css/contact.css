@@ -47,7 +47,7 @@ input[type=text], select, textarea {
     resize: vertical; 
     display: flex;
     flex-direction: column;
-    color: white;
+    color: blue;
     border: none;
     /* border-bottom: 1px solid blue;  */
   }
