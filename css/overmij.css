@@ -1,6 +1,6 @@
 h1 {
     padding-right: 1em;
-    padding-top: 6rem;
+    padding-top: 4rem;
     padding-left: 12rem;
     font-size: 3.7vw;
     margin-bottom: 0;
@@ -87,7 +87,7 @@ section:first-of-type img:nth-of-type(1) {
     /* border-radius: 0.5em; */
     position: relative;
     z-index: 2;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 }
 
 @media (max-width: 40em) {
@@ -206,7 +206,8 @@ section ul li {
 
 header h1, 
 header p, 
-header img,
+section:first-of-type img:nth-of-type(1),
+section:first-of-type img:nth-of-type(2),
 h2,
 section ul:first-of-type,
 h3,
@@ -219,7 +220,8 @@ p {
 
 header h1.in-view, 
 header p.in-view, 
-header img.in-view,
+section:first-of-type img:nth-of-type(1).in-view,
+section:first-of-type img:nth-of-type(2).in-view,
 h2.in-view,
 section ul:first-of-type.in-view,
 h3.in-view,

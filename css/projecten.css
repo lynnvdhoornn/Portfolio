@@ -158,14 +158,14 @@ footer {
 
 
 header h1, 
-header p {
+header p, section ol {
     opacity: 0; 
     transform: translateY(50px); 
     transition: opacity 1s ease, transform 1s ease; 
 }
 
 header h1.in-view, 
-header p.in-view {
+header p.in-view, section ol.in-view {
     opacity: 1; 
     transform: translateY(0); 
 }

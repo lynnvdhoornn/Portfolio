@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // titles floating
 document.addEventListener("DOMContentLoaded", function() {
-    const elements = document.querySelectorAll('section h2:not(section:nth-of-type(3) h2), section img, section:nth-of-type(2) div, section:nth-of-type(5) div, section ol');
+    const elements = document.querySelectorAll('section h2:not(section:nth-of-type(3) h2), section img, section:nth-of-type(2) div, section:nth-of-type(5) div');
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -83,6 +83,23 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }, { threshold: 0.5 });
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('section:first-of-type>ul:first-of-type');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Stop met observeren zodra het element zichtbaar is
+            }
+        });
+    }, { threshold: 0.1 });
 
     elements.forEach(element => {
         observer.observe(element);

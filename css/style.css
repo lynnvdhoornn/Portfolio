@@ -9,7 +9,7 @@ transition: transform 0.3s ease-out;
     header img:first-of-type {
         width: 7em;
         top: 7rem;
-        left: 22rem;
+        left: 18rem;
     }
 }
 
@@ -20,7 +20,7 @@ h1 {
     padding-right: 10em;
     position: relative;
     white-space: normal;
-    padding-top: 15rem;
+    padding-top: 13rem;
         padding-left: 5rem;
         font-size: 4vw;
         margin: 0;
@@ -76,7 +76,7 @@ section:first-of-type img {
 
 @media (max-width: 50em) {
     section:first-of-type img {
-        width: 28.5em;
+        width: 23em;
         border-radius: 0.7em;
     }
 }
@@ -132,6 +132,7 @@ section:first-of-type h3 {
     section:first-of-type h3 {
             white-space: normal;
             margin: 0;
+            font-size: 1.5em;
     }
 }
 
@@ -149,7 +150,7 @@ section:first-of-type>ul:first-of-type {
     grid-gap: 0;
     margin: 0;
     list-style-type: none;
-    gap: 0.25em;
+    gap: 1em;
 }
 
 @media (max-width: 50em) {
@@ -415,7 +416,7 @@ section:nth-of-type(5) {
 
 @media (max-width: 40em) {
     section:nth-of-type(5) {
-        padding: 3em 1.5em 1em 1.5em;
+        padding: 3em 0em 1em 1.5em;
     }
 }
 
@@ -480,7 +481,8 @@ section:nth-of-type(5) img {
 @media (max-width: 40em) {
     section:nth-of-type(5) img {
         width: 4em;
-        top: 3rem;
+        top: 2.5em;
+        right: 4.4em;
     }
 }
 
@@ -496,7 +498,7 @@ margin: 0;
     }
 }
 
-
+section:first-of-type>ul:first-of-type,
 section:nth-of-type(2) h2, 
 section:nth-of-type(2) div, 
 section:nth-of-type(2) img, section:nth-of-type(5) div  {
@@ -505,6 +507,7 @@ section:nth-of-type(2) img, section:nth-of-type(5) div  {
     transition: opacity 1s ease, transform 1s ease;
 }
 
+section:first-of-type>ul:first-of-type.in-view,
 section:nth-of-type(2) h2.in-view, 
 section:nth-of-type(2) div.in-view, 
 section:nth-of-type(2) img.in-view, section:nth-of-type(5) div.in-view {

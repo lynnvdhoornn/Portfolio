@@ -1,11 +1,23 @@
 // h1
 document.addEventListener("DOMContentLoaded", function () {
-    let title = document.querySelector("header h1"); // Selecteert de <h1> binnen <header>
+    let title = document.querySelector("header h1");
     if (title) {
+        // Schakel tijdelijk transitions uit
+        title.style.transition = "none";
+
+        // Pas de rotatie toe
         title.style.transform = "rotate(-90deg)";
-        title.style.transformOrigin = "left bottom"; // Pas dit aan als de rotatie niet goed uitkomt
+        title.style.transformOrigin = "left bottom";
+
+        // Forceer een reflow zodat de style direct wordt toegepast
+        void title.offsetWidth;
+
+        // (optioneel) Transition daarna weer aanzetten als je 'm later nodig hebt
+        // title.style.transition = "";
     }
 });
+
+
 
 
 // image rotation

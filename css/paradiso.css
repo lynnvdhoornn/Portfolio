@@ -7,18 +7,14 @@ header h1 {
     left: 8rem;
     top: 38rem;
     padding-right: 23em;
-    transform: rotate(-90deg);  /* Draait de tekst 90 graden */
-    transform-origin: left bottom;  /* Pas dit aan als de positie niet goed uitkomt */
+    transition: transform 0.5s ease;
     position: absolute;
     flex-wrap: wrap;
 }
 
 @media (max-width: 40em) {
     header h1 {
-        padding: 3.5em 0 0 0.5em;
-        line-height: 1em;
-        font-size: 2.5em;
-        order: 2;
+        display: none;
     }
 }
 
@@ -51,11 +47,20 @@ flex-direction: column;
 header img:nth-of-type(1) {
     width: 46em;
     /* width: 98%; */
-    top: 12rem;
+    top: 11rem;
     /* padding-left: 0; */
 left: 22rem;
 transition: none;
 position: relative;
+}
+
+@media (max-width: 50em) {
+    header img:nth-of-type(1) {
+    width: 20em;
+    top: 7em;
+     left: 2.5rem;
+     order: 1;
+    }
 }
 
 header img:nth-of-type(2) {
@@ -70,11 +75,10 @@ transition: transform 0.3s ease-out;
 }
 
 @media (max-width: 50em) {
-    header img:nth-of-type(1) {
-    width: 24em;
-    top: 7em;
-     left: 2.5rem;
-     order: 1;
+    header img:nth-of-type(2) {
+    width: 6em;
+    top: 18em;
+     right: 10em;
     }
 }
 
@@ -88,6 +92,21 @@ header section {
     background-color: rgb(20, 20, 20);
 }
 
+@media (max-width: 50em) {
+    header section {
+        grid-template-columns: 10.5em 10.5em 0em;
+        gap: 1em;
+        padding: 12em 0em 3em 1.5em;
+        grid-template-rows: 3em 4em 12em;
+}
+}
+
+@media (max-width: 50em) {
+    header section h2, header section article:nth-of-type(1) p {
+        display: none;
+}
+}
+
 header section article:nth-of-type(1) {
     grid-row-start: 3;
 }
@@ -96,9 +115,21 @@ header section article:nth-of-type(2) {
     grid-column-start: 2;
 }
 
+@media (max-width: 50em) {
+    header section article:nth-of-type(2) {
+        grid-column-start: 1;
+    }
+}
+
 header section article:nth-of-type(4) {
     grid-row-start: 2;
     grid-column-start: 2;
+}
+
+@media (max-width: 50em) {
+    header section article:nth-of-type(4) {
+        grid-column-start: 1;
+    }
 }
 
 header section article:nth-of-type(5) {
@@ -106,9 +137,31 @@ header section article:nth-of-type(5) {
     grid-column-start: 3;
 }
 
+@media (max-width: 50em) {
+    header section article:nth-of-type(5) {
+        /* grid-row-start: 3; */
+        grid-column-start: 2;
+    }
+}
+
 header section article:nth-of-type(6) {
     grid-column-start: 2;
 }
+
+@media (max-width: 50em) {
+    header section article:nth-of-type(6) {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+}
+
+@media (max-width: 50em) {
+    header section article:nth-of-type(7) {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+}
+
 
 header h2 {
     font-size: 3em;
@@ -118,6 +171,20 @@ header h2 {
 header h3 {
     margin: 0;
     font-size: 1.5em;
+}
+
+@media (max-width: 50em) {
+    header h3{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 50em) {
+    header p{
+        font-size: 0.4em;
+        padding-right: 1em;
+        padding-left: 0em;
+    }
 }
 
 
@@ -135,13 +202,7 @@ header section article:nth-of-type(5) h3 {
     margin: 0;
 }
 
-@media (max-width: 40em) {
-    header section article:nth-of-type(5) h3 {
-        font-size: 1.3em;
-        padding: 2em 0 0 1em;
-        margin-bottom: 0;
-    }
-}
+
 
 header section article:nth-of-type(5) ul {
     list-style-type: none;
@@ -158,6 +219,7 @@ header section article:nth-of-type(5) ul {
         display: flex;
         gap: 0.5em;
         /* padding-left: 1.5em; */
+        margin-bottom: 0;
     }
     }
 
@@ -243,7 +305,7 @@ main section:nth-of-type(1) {
 
 @media (max-width: 40em) {
    main section:nth-of-type(1) {
-        padding: 5em 2em 0em 0;
+        padding: 2em 2em 0em 0;
     }
 }
 
@@ -270,8 +332,7 @@ main section:nth-of-type(1) video {
 @media (max-width: 40em) {
 main section:nth-of-type(1) video {
     left:1em;
-    width: 29em;
-
+    width: 22em;
 }
 }
 
@@ -334,9 +395,24 @@ display: flex;
 align-items: flex-start;
 }
 
+@media (max-width: 40em) {
+    main section:nth-of-type(2) div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        }
+}
+
 main section:nth-of-type(2) img:nth-of-type(1) {
     width: 34.5em;
     height: 10em;
+}
+
+@media (max-width: 40em) {
+main section:nth-of-type(2) img:nth-of-type(1) {
+    width: 22em;
+    height: 6em;
+}
 }
 
 main section:nth-of-type(2) img:nth-of-type(2) {
@@ -348,9 +424,10 @@ main section:nth-of-type(2) img:nth-of-type(2) {
 }
 
 @media (max-width: 40em) {
-    main section:nth-of-type(2) img {
-        width: 28.5em;
+    main section:nth-of-type(2) img:nth-of-type(2) {
+        width: 23.5em;
         bottom: 1em;
+        padding-left: 0;
       }
 }
 
@@ -423,14 +500,24 @@ main section:nth-of-type(3) img:nth-of-type(1) {
     width: 43em; 
 }
 
+@media (max-width: 40em) {
+main section:nth-of-type(3) img:nth-of-type(1) {
+    width: 23em;
+    padding-left: 1em;
+}
+}
+
 main section:nth-of-type(3) img:nth-of-type(2) {
     width: 43em; 
 }
 
+
+
 @media (max-width: 40em) {
-    main section:nth-of-type(4) img {
-        width: 31em;
-        padding: 0;
+    main section:nth-of-type(3) img:nth-of-type(2) {
+        width: 25em;
+        padding-left: 1em;
+        padding-bottom: 0;
     }
 }
 
@@ -478,6 +565,7 @@ video {
 
 
 header h1, 
+header h3,
 header p, 
 header img,
 h2,
@@ -490,6 +578,7 @@ p {
 }
 
 header h1.in-view, 
+header h3.in-view,
 header p.in-view, 
 header img.in-view,
 h2.in-view,
