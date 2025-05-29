@@ -3,6 +3,10 @@ header h1 {
     top: 41rem;
 }
 
+header section {
+    padding-bottom: 4em;
+}
+
 header div {
     grid-template-rows: 15em 15em;
 }
@@ -58,7 +62,7 @@ main section:nth-of-type(1) div {
 
 main section:nth-of-type(1) {
     /* display: flex; */
-    padding: 6em 0em 0em 10em;
+    padding: 8em 0em 0em 10em;
     gap: 2em;
 }
 

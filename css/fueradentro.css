@@ -3,6 +3,10 @@ header h1 {
     top: 41rem;
 }
 
+header section {
+    padding-top: 13em;
+}
+
 header video {
 width: 20em;
 top: 9vw;
