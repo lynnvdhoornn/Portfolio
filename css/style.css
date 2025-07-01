@@ -68,10 +68,11 @@ section:first-of-type h2 {
 }
 
 section:first-of-type img {
-    width: 45em;
+    width: 43em;
     position: relative;
     padding: 0;
     display: block;
+    border-radius: 0.8em;
 }
 
 @media (max-width: 50em) {
@@ -93,6 +94,7 @@ section:first-of-type div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 0.8em;
 }
 
 section:first-of-type li:hover div {
@@ -146,7 +148,7 @@ section:first-of-type>ul:first-of-type p {
 section:first-of-type>ul:first-of-type {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0;
+    padding: 0 2em 0 1.5em;
     grid-gap: 0;
     margin: 0;
     list-style-type: none;
@@ -183,7 +185,7 @@ display: none;
 
 section:first-of-type>ul:first-of-type li div a {
     text-decoration: none;
-    padding-right: 24em;
+    padding-right: 22em;
 }
 
 @media (max-width: 50em) {
@@ -195,7 +197,7 @@ section:first-of-type>ul:first-of-type li div a {
 
 section:first-of-type>ul:first-of-type li:last-of-type a {
     text-decoration: none;
-    padding-right: 21em;
+    padding-right: 19em;
 }
 
 section:first-of-type>ul:first-of-type li a p {
@@ -203,7 +205,8 @@ section:first-of-type>ul:first-of-type li a p {
     border-color: white;
     border-width: 0.1em;
     border-style: solid;
-    padding: 1em 0.1em 1em 1em;
+    border-radius: 2em;
+    padding: 0.6em 0.1em 0.6em 1em;
 }
 
 section:first-of-type>ul:first-of-type li a p:hover {
@@ -269,8 +272,8 @@ section:nth-of-type(2) div {
 }
 
 section:nth-of-type(2) img {
-    /* border-radius: 0.5em; */
-    width: 20em;
+    border-radius: 0.5em;
+    width: 18em;
 }
 
 @media (max-width: 40em) {
@@ -422,7 +425,7 @@ section:nth-of-type(5) {
 
 section:nth-of-type(5) div {
     background-color: #171717;
-    border-radius: 0.5em;
+    border-radius: 0.8em;
     display: grid;
     grid-template-columns: 72em auto;
 }
